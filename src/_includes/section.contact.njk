@@ -1,0 +1,25 @@
+<div class="flex flex-col justify-center h-full py-1">
+    <div class="self-center items-center justify-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
+      <div class="w-full text-center sm:text-left sm:w-1/10 py-12 sm:px-8">
+        <div class="font-light font-mono text-browngray text-2xl my-6">
+          <p class="w-full tracking-tighter typeIt"></p>
+        </div>
+        <h1 class="font-bold tracking-widest text-1xl">Let's get in touch!</h1>
+        <form action="mailto:contact@aresceka.com" method="post">
+          <div class="flex flex-col mb-4">
+            <input type="text" name="name" placeholder="Your name" class="mb-4 p-2 rounded border border-gray-400">
+            <input type="email" name="email" placeholder="Your email" class="mb-4 p-2 rounded border border-gray-400">
+            <textarea name="message" placeholder="Your message" class="mb-4 p-2 rounded border border-gray-400"></textarea>
+          </div>
+          <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    new TypeIt(".typeIt", {
+      strings: "Contact.",
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+  </script>
